@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Lecture</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CSS Grid Lecture</h1>
+    </header>
+
+    <main>
+      <section id="theory">
+        <h2>Theory</h2>
+        <p>
+          CSS Grid Layout is a powerful two-dimensional layout system for the
+          web. It allows you to create complex and responsive layouts with ease.
+          Unlike Flexbox, which is primarily one-dimensional, Grid works in both
+          rows and columns.
+        </p>
+        <p>Key concepts include:</p>
+        <ul>
+          <li>
+            <strong>Grid Container:</strong> The parent element that establishes
+            the grid.
+          </li>
+          <li>
+            <strong>Grid Items:</strong> The direct children of the grid
+            container.
+          </li>
+          <li>
+            <strong>Grid Lines:</strong> The horizontal and vertical lines that
+            divide the grid.
+          </li>
+          <li>
+            <strong>Grid Tracks:</strong> The spaces between grid lines (rows
+            and columns).
+          </li>
+          <li><strong>Grid Areas:</strong> Named regions within the grid.</li>
+        </ul>
+      </section>
+
+      <section id="examples">
+        <h2>Examples</h2>
+        <div class="grid-container example1">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+        </div>
+
+        <div class="grid-container example2">
+          <div class="grid-item item1">Header</div>
+          <div class="grid-item item2">Sidebar</div>
+          <div class="grid-item item3">Content</div>
+          <div class="grid-item item4">Footer</div>
+        </div>
+      </section>
+
+      <section id="practice">
+        <h2>Practice Questions</h2>
+        <ol>
+          <li>Create a grid with 3 columns and 2 rows.</li>
+          <li>
+            Use grid-template-areas to create a layout with a header, sidebar,
+            content, and footer.
+          </li>
+          <li>
+            Make the grid responsive, so it stacks items on smaller screens.
+          </li>
+          <li>Use grid-gap to add space between grid items.</li>
+          <li>
+            Use grid-column and grid-row to span items across multiple tracks.
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; CSS Grid Lecture</p>
+    </footer>
+  </body>
+</html>

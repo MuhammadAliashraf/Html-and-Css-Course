@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Media Queries Lecture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 2rem;
+        max-width: 900px;
+        margin: auto;
+        background: #f7f9fb;
+        color: #333;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #1a237e;
+      }
+      pre {
+        background: #e3f2fd;
+        padding: 1rem;
+        border-left: 4px solid #2196f3;
+        overflow-x: auto;
+      }
+      code {
+        font-family: monospace;
+      }
+      .example-box {
+        padding: 1rem;
+        background: #ffffff;
+        border: 1px solid #ccc;
+        margin-bottom: 1rem;
+      }
+
+      /* Example Media Query */
+      @media (max-width: 600px) {
+        body {
+          background-color: #e8f5e9;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📱 CSS Media Queries</h1>
+    <p>
+      Media Queries are a powerful feature in CSS that allow you to apply styles
+      based on the <strong>device's characteristics</strong> such as screen
+      width, resolution, orientation, etc.
+    </p>
+
+    <h2>🎯 Why Media Queries?</h2>
+    <ul>
+      <li>To make your website responsive</li>
+      <li>To target specific screen sizes (mobile, tablet, desktop)</li>
+      <li>To enhance user experience across all devices</li>
+    </ul>
+
+    <h2>🔑 Basic Syntax</h2>
+    <pre><code>@media media-type and (condition) {
+  /* CSS rules */
+  }</code></pre>
+
+    <p>
+      <strong>media-type</strong>: screen, print, all (default)<br />
+      <strong>condition</strong>: max-width, min-width, orientation, resolution
+      etc.
+    </p>
+
+    <h3>Example:</h3>
+    <pre><code>@media screen and (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}</code></pre>
+
+    <div class="example-box">
+      Resize your browser to less than 600px width to see background color
+      change!
+    </div>
+
+    <h2>📐 Common Media Features</h2>
+    <ul>
+      <li>
+        <code>max-width</code>: triggers if viewport width is less than or equal
+        to specified value
+      </li>
+      <li>
+        <code>min-width</code>: triggers if viewport width is greater than or
+        equal to specified value
+      </li>
+      <li><code>orientation</code>: portrait or landscape</li>
+      <li><code>aspect-ratio</code>: ratio of width to height</li>
+      <li><code>resolution</code>: DPI-based targeting</li>
+    </ul>
+
+    <h2>🧪 Practical Example</h2>
+    <pre><code>
+/* Base styles */
+.box {
+  width: 100%;
+  padding: 20px;
+  background-color: salmon;
+  text-align: center;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .box {
+    background-color: lightgreen;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .box {
+    background-color: lightskyblue;
+  }
+}
+</code></pre>
+
+    <div class="example-box box">Responsive Box — Resize me!</div>
+
+    <h2>📝 Tips & Best Practices</h2>
+    <ul>
+      <li>
+        Use <code>em</code> or <code>rem</code> units for better scalability
+      </li>
+      <li>Start with mobile-first using <code>min-width</code></li>
+      <li>Group media queries logically (e.g., by breakpoints)</li>
+      <li>Test on real devices or use browser dev tools</li>
+    </ul>
+
+    <h2>📊 Common Breakpoints</h2>
+    <ul>
+      <li>Small devices (phones): <code>max-width: 600px</code></li>
+      <li>
+        Medium devices (tablets):
+        <code>min-width: 600px and max-width: 991px</code>
+      </li>
+      <li>Large devices (desktops): <code>min-width: 992px</code></li>
+    </ul>
+
+    <h2>💡 Advanced Example: Orientation</h2>
+    <pre><code>@media (orientation: landscape) {
+  body {
+    background-color: #ffe082;
+  }
+}</code></pre>
+    <p>This changes the background when the device is in landscape mode.</p>
+
+    <h2>🧠 Summary</h2>
+    <ul>
+      <li>Media queries help create responsive designs</li>
+      <li>They respond to screen width, orientation, resolution, etc.</li>
+      <li>Use <code>min-width</code> for mobile-first strategy</li>
+      <li>Always test responsiveness before shipping!</li>
+    </ul>
+
+    <p>
+      <strong
+        >🎉 Now you’re ready to build fully responsive websites using media
+        queries!</strong
+      >
+    </p>
+  </body>
+</html>

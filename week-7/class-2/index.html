@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Lecture - HTML & CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      h1 {
+        color: #0c1032;
+        font-size: 2.5rem;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .responsive-img {
+        width: 100%;
+        height: auto;
+        border: 2px solid #253298;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+        padding: 0 0 0 0;
+      }
+      /* The CSS box-shadow property has six possible property values:
+inset.
+horizontal offset.
+vertical offset.
+blur radius.
+spread distance.
+color. */
+      .object-cover {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border: 2px solid #182165;
+        margin-bottom: 10px;
+      }
+
+      .object-contain {
+        width: 300px;
+        height: 200px;
+        object-fit: contain;
+        border: 2px solid #0c1032;
+        margin-bottom: 10px;
+      }
+
+      .rounded-circle {
+        width: 150rem;
+        /* height: 150rem; */
+        height: auto;
+        object-fit: cover;
+        /* //cover all the above values  */
+        /* border-radius: 500px; */
+        /* border-radius: 50%; */
+        border-radius: 1rem;
+        border: 4px solid #000;
+      }
+      .btn {
+        width: 100px;
+        height: 100px;
+        background-color: #000;
+        color: white;
+        text-align: center;
+        height: fit-content;
+        padding: 2px 2px 2px 2px;
+        transition: 0.3s ease-out;
+      }
+      .btn:hover {
+        cursor: pointer;
+        color: #000;
+        background-color: white;
+        border: 1px solid black;
+      }
+
+      .grayscale {
+        filter: grayscale(100%);
+      }
+      .grayscale:hover {
+        filter: grayscale(0%);
+      }
+      .hover-zoom:hover {
+        transform: scale(1.1);
+        transition: 0.3s ease-in-out;
+      }
+
+      .img-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .img-grid img {
+        flex: 1 1 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🖼️ Images in HTML & CSS</h1>
+    <div class="btn">
+      Button Hover me
+    </div>
+    <div class="section">
+      <h2>1. Basic Image</h2>
+      <p>
+        This is how you add a basic image using the
+        <code>&lt;img&gt;</code> tag:
+      </p>
+      <img
+        src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d"
+        alt="Mountain"
+      />
+    </div>
+
+    <div class="section">
+      <h2>2. Responsive Image with Styling</h2>
+      <p>
+        Using <code>max-width</code>, <code>border-radius</code>, and
+        <code>box-shadow</code>:
+      </p>
+      <img
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+        alt="Forest"
+        class="responsive-img"
+      />
+    </div>
+
+    <div class="section">
+      <h2>3. Object Fit: Cover vs Contain</h2>
+      <div class="img-grid">
+        <div>
+          <p><code>object-fit: cover</code>:</p>
+          <img
+            src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68"
+            alt="Beach"
+            class="object-cover"
+          />
+        </div>
+        <div>
+          <p><code>object-fit: contain</code>:</p>
+          <img
+            src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68"
+            alt="Laptop"
+            class="object-contain"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>4. Circle Image (Avatar)</h2>
+      <p>Using <code>border-radius: 50%</code> to create a circular image:</p>
+      <img
+        src="https://images.unsplash.com/photo-1527980965255-d3b416303d12"
+        alt="Profile"
+        class="rounded-circle"
+      />
+    </div>
+
+    <div class="section">
+      <h2>5. Filter Effect</h2>
+      <p>Apply a grayscale filter with CSS:</p>
+      <img
+        src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1"
+        alt="City"
+        class="grayscale"
+      />
+    </div>
+
+    <div class="section">
+      <h2>6. Hover Effect (Zoom)</h2>
+      <p>Zoom in slightly when hovered:</p>
+      <img
+        src="https://images.unsplash.com/photo-1526045612212-70caf35c14df"
+        alt="Coffee"
+        class="responsive-img hover-zoom"
+      />
+    </div>
+  </body>
+</html>

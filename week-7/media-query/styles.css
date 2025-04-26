@@ -1,0 +1,163 @@
+/* =====================
+   Base Styles
+===================== */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f4f8;
+    color: #0c1032;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  section {
+    margin: 40px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* =====================
+     Grid Layout Section
+  ===================== */
+  
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+  }
+  
+  .box {
+    background-color: #253298;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  /* =====================
+     Navigation Bar
+  ===================== */
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #182165;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* =====================
+     Show/Hide Elements
+  ===================== */
+  
+  .mobile-only {
+    display: none;
+  }
+  
+  .desktop-only {
+    display: block;
+  }
+  
+  /* =====================
+     Media Queries Start
+  ===================== */
+  
+  /* Small devices - Mobile (max width: 600px) */
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: #fff4f4;
+    }
+  
+    .responsive-text p {
+      font-size: 14px;
+      color: crimson;
+    }
+  
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .mobile-only {
+      display: block;
+      color: green;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 10px;
+    }
+  
+    .desktop-only {
+      display: none;
+    }
+  }
+  
+  /* Medium devices - Tablet (601px to 992px) */
+  @media only screen and (min-width: 601px) and (max-width: 992px) {
+    body {
+      background-color: #fffce0;
+    }
+  
+    .responsive-text p {
+      font-size: 18px;
+      color: orange;
+    }
+  
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Large devices - Desktop (min width: 993px) */
+  @media only screen and (min-width: 993px) {
+    .responsive-text p {
+      font-size: 22px;
+      color: green;
+    }
+  
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* =====================
+     Footer
+  ===================== */
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    color: #555;
+  }
+  

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Tables Lecture</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CSS Tables Lecture</h1>
+
+    <section id="table-borders">
+      <h2>1. Table Borders</h2>
+      <p>
+        Use <code>border</code> property to add borders around table, rows, or
+        cells.
+      </p>
+      <pre><code>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+    </code></pre>
+      <table class="borders">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Ali</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>Ahmed</td>
+          <td>30</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="table-size">
+      <h2>2. Table Size</h2>
+      <p>Use <code>width</code> and <code>height</code> to control size.</p>
+      <table class="size">
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Book</td>
+          <td>$10</td>
+        </tr>
+        <tr>
+          <td>Pen</td>
+          <td>$2</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="table-alignment">
+      <h2>3. Table Alignment</h2>
+      <p>
+        Align text using <code>text-align</code> and
+        <code>vertical-align</code>.
+      </p>
+      <table class="alignment">
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+        </tr>
+        <tr>
+          <td>Ali</td>
+          <td>Developer</td>
+        </tr>
+        <tr>
+          <td>Ayesha</td>
+          <td>Designer</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="table-style">
+      <h2>4. Table Style</h2>
+      <p>
+        Use <code>background-color</code>, <code>hover</code>, and
+        <code>padding</code> for styling.
+      </p>
+      <table class="styled">
+        <tr>
+          <th>City</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Lahore</td>
+          <td>Pakistan</td>
+        </tr>
+        <tr>
+          <td>Paris</td>
+          <td>France</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="table-responsive">
+      <h2>5. Table Responsive</h2>
+      <p>Make table scrollable on small screens.</p>
+      <div class="table-container">
+        <table class="responsive">
+          <tr>
+            <th>Month</th>
+            <th>Sales</th>
+            <th>Profit</th>
+            <th>Growth</th>
+          </tr>
+          <tr>
+            <td>Jan</td>
+            <td>10k</td>
+            <td>4k</td>
+            <td>15%</td>
+          </tr>
+          <tr>
+            <td>Feb</td>
+            <td>15k</td>
+            <td>6k</td>
+            <td>25%</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
