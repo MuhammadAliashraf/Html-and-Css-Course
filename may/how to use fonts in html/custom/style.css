@@ -1,0 +1,17 @@
+/* Home work add fonts in css using import   */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+p {
+  font-family: 'Exile', sans-serif;
+}
