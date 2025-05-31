@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind CSS Lecture</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans p-6">
+
+  <!-- Header -->
+  <header class="mb-8">
+    <h1 class="text-4xl font-bold text-blue-600 mb-2">🎓 Tailwind CSS in HTML</h1>
+    <p class="text-lg">Utility-first CSS Framework – Write styles directly in your HTML</p>
+  </header>
+
+  <!-- Section: Why Tailwind -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold text-gray-700 mb-2">🔥 Why Tailwind?</h2>
+    <ul class="list-disc pl-6 space-y-1">
+      <li>Fast development – write CSS using utility classes</li>
+      <li>Responsive out of the box</li>
+      <li>Customizable with configuration</li>
+      <li>No need to write separate CSS files</li>
+    </ul>
+  </section>
+
+  <!-- Section: Typography -->z
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold text-gray-700 mb-2">✍️ Typography</h2>
+    <p class="text-sm">Small text</p>
+    <p class="text-lg font-medium">Large text with medium weight</p>
+    <p class="text-2xl font-bold text-violet-500">Extra Large violet Bold Text</p>
+  </section>
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold text-gray-700 mb-2">✍️ Typography</h2>
+    <p class="text-sm">Small text</p>
+    <p class="text-lg font-medium">Large text with medium weight</p>
+    <p class="text-2xl font-bold text-blue-500">Extra Large Blue Bold Text</p>
+  </section>
+
+  <!-- Section: Spacing -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold text-gray-700 mb-2">📐 Spacing</h2>
+    <div class="bg-yellow-900 p-4 m-2 shadow rounded">
+      <p class="mb-2">This box has padding and margin.</p>
+      <div class="bg-blue-100 p-2">Nested box with padding</div>
+    </div>
+  </section>
+
+  <!-- Section: Colors -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold text-gray-700 mb-2">🎨 Colors</h2>
+    <div class="space-y-2">
+      <p class="text-red-500">Red Text</p>
+      <p class="bg-green-200 text-green-800 p-2 rounded">Green background with dark green text</p>
+      <p class="bg-yellow-100 text-yellow-700 p-2 rounded">Yellow alert box</p>
+    </div>
+  </section>
+
+  <!-- Section: Flexbox -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold text-gray-700 mb-2">📦 Flexbox</h2>
+   
+    <div class="flex items-center justify-between bg-white p-4 rounded shadow">
+      <span>Left</span>
+      <span>Right</span>
+    </div>
+    <div  class="flex flex-col justify-evenly bg-white p-4 rounded shadow " >
+      <span>Left</span>
+      <span>Right</span>
+    </div>
+  </section>
+
+  <!-- Section: Responsive -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold text-gray-700 mb-2">📱 Responsive Design</h2>
+    <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+      Resize the window to see responsive text sizes.
+    </p>
+    <p class="text-sm  sm:text-base  xs:bg-black sm:bg-red-600 md:bg-blue-600 lg:bg-yellow-600 ">
+      Resize the window to see responsive text sizes.
+    </p>
+  </section>
+
+  <!-- Section: Card Component -->
+  <section class="mb-8">
+    <h2 class="hover:bg-red-600  text-2xl font-semibold text-gray-700 mb-4">🧱 Card Component Example</h2>
+    <div class="max-w-sm bg-white rounded-xl shadow-lg p-6 mx-auto">
+      <img src="https://via.placeholder.com/300x150" alt="Placeholder" class="rounded mb-4" />
+      <h3 class="text-xl font-bold mb-2">Card Title</h3>
+      <p class="text-gray-600 mb-4">This is a basic card layout built with Tailwind CSS utility classes.</p>
+      <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+        Click Me
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 mt-10">
+    Created for Tailwind CSS Lecture | <a href="https://tailwindcss.com" class="text-blue-500 underline">Docs</a>
+  </footer>
+
+</body>
+</html>
